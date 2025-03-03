@@ -1,17 +1,14 @@
-/* Background */
-/* Background */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw; /* Ensure full width */
-  background: linear-gradient(to right, #c2e9fb, #a1c4fd); /* Remove extra gradient stops */
-  overflow: hidden; /* Prevent scroll */
+  width: 100vw;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  overflow: hidden; 
 }
 
 
-/* Card */
 .card {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -22,14 +19,18 @@
   backdrop-filter: blur(10px);
 }
 
-/* Title */
+.card-container {
+  max-width: 90%; 
+  margin: 0 auto; 
+  padding: 16px; 
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Dropdown */
 .dropdown {
   width: 100%;
   padding: 8px;
@@ -39,7 +40,6 @@
   font-size: 1rem;
 }
 
-/* Search Bar */
 .search {
   width: 100%;
   padding: 8px;
@@ -49,13 +49,11 @@
   font-size: 1rem;
 }
 
-/* Table */
 .table {
   text-align: left;
   margin-top: 10px;
 }
 
-/* Rows */
 .row {
   display: flex;
   justify-content: space-between;
@@ -63,19 +61,16 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Crypto Name */
 .crypto {
-  /* font-weight: bold; */
   color: #333;
 }
 
-/* Price */
+
 .price {
   color: #0070f3;
   font-weight: bold;
 }
 
-/* Refresh Button */
 .refreshButton {
   width: 100%;
   padding: 10px;
@@ -96,7 +91,6 @@
 }
 
 
-/* Loading & Error */
 .loading,
 .error {
   color: red;
